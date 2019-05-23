@@ -1,34 +1,38 @@
 body{
-    background: black;
-    color:white;
+    background: #efefef;
     margin: 0px;
 }
 a{
     color:inherit;
-    text-decoration: none;
+    /* 去掉a标签的下划线 */
+    text-decoration: none; 
 }
+
+/* 让块级元素并列*/
 .clearfix::after{
     content: '';
     display: block;
     clear: both;
 }
 .topNavBar{
-    padding-top: 26px;
-    padding-bottom: 26px;
-    padding-left: 16px;
-    padding-left: 16px;
+    padding: 26px 0px 26px 0px;
+    position: fixed;
+    left: 0;
+    top:0;
+    width: 100%;
 }
-.topNavBar>nav>ul>li{
+.topNavBar nav>ul>li{
     float: left;
     margin-left: 17px;
     margin-right: 17px;
+
 }
-.topNavBar>nav>ul{
+.topNavBar nav>ul{
     list-style: none;
     margin: 0;
     padding: 0;
 }
-.topNavBar>nav>ul>li>a{
+.topNavBar nav>ul>li>a{
     font-size: 13px;
     color: #b7b7b7;
     font-weight: bold;
@@ -38,16 +42,16 @@ a{
     padding-top: 5px;
     padding-bottom: 5px;
 }
-.topNavBar>a{
+.topNavBar a{
     float: left;
 }
-.topNavBar>nav{
+.topNavBar nav{
     float: right;
     padding-top: 6px;
     padding-bottom: 2px;
 }
 
-.topNavBar>nav>ul>li>a:hover{
+.topNavBar nav>ul>li>a:hover{
     border-bottom: 3px solid #e06567;
 }
 
@@ -64,4 +68,34 @@ a{
 
 .topNavBar .logo .card{
     color: #9a9da2
+}
+
+.banner{
+    background-image : url(./img/rs-cover.jpg);
+    height: 515px;
+    background-position: center center;
+    background-size: cover;
+}
+
+.banner .mask{
+    height: 515px;
+    background-color: rgba(0, 0, 0, 0.75)
+}
+
+.topNavBarInner{
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.userCard{
+    border: 1px solid red;
+    max-width: 930px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+}
+
+.userCard .welcome{
+    background-color: #d96f6f;
+    color: white;
 }
