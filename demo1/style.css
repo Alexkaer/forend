@@ -1,3 +1,21 @@
-body{
-    background: gray
+.clearfix::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+dl{
+    margin: 0;
+    padding: 0;
+}
+
+dl dt{
+    float: left;
+    width: 50%;
+}
+
+dl dd{
+    float: left;
+    width: 50%;
+    margin-inline-start: 0px;
 }
