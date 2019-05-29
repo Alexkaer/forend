@@ -1,38 +1,43 @@
-body{
+body {
     background: #efefef;
     margin: 0px;
 }
-a{
-    color:inherit;
+
+a {
+    color: inherit;
     /* 去掉a标签的下划线 */
-    text-decoration: none; 
+    text-decoration: none;
 }
 
 /* 让块级元素并列*/
-.clearfix::after{
+.clearfix::after {
     content: '';
     display: block;
     clear: both;
 }
-.topNavBar{
+
+.topNavBar {
     padding: 26px 0px 26px 0px;
     position: fixed;
     left: 0;
-    top:0;
+    top: 0;
     width: 100%;
 }
-.topNavBar nav>ul>li{
+
+.topNavBar nav>ul>li {
     float: left;
     margin-left: 17px;
     margin-right: 17px;
 
 }
-.topNavBar nav>ul{
+
+.topNavBar nav>ul {
     list-style: none;
     margin: 0;
     padding: 0;
 }
-.topNavBar nav>ul>li>a{
+
+.topNavBar nav>ul>li>a {
     font-size: 13px;
     color: #b7b7b7;
     font-weight: bold;
@@ -42,59 +47,62 @@ a{
     padding-top: 5px;
     padding-bottom: 5px;
 }
-.topNavBar a{
+
+.topNavBar a {
     float: left;
 }
-.topNavBar nav{
+
+.topNavBar nav {
     float: right;
     padding-top: 6px;
     padding-bottom: 2px;
 }
 
-.topNavBar nav>ul>li>a:hover{
+.topNavBar nav>ul>li>a:hover {
     border-bottom: 3px solid #e06567;
 }
 
-.topNavBar .logo{
+.topNavBar .logo {
     font-size: 24px;
     font-family: "Arial Black";
     padding-top: 3px;
     padding-bottom: 4px;
 }
-.topNavBar .logo .rs{
-  margin-right: 4px;
-  color: #e06567 
+
+.topNavBar .logo .rs {
+    margin-right: 4px;
+    color: #e06567
 }
 
-.topNavBar .logo .card{
+.topNavBar .logo .card {
     color: #9a9da2
 }
 
-.banner{
-    background-image : url(./img/rs-cover.jpg);
+.banner {
+    background-image: url(./img/rs-cover.jpg);
     height: 515px;
     background-position: center center;
     background-size: cover;
 }
 
-.banner .mask{
+.banner .mask {
     height: 515px;
     background-color: rgba(0, 0, 0, 0.75)
 }
 
-.topNavBarInner{
+.topNavBarInner {
     padding-left: 16px;
     padding-right: 16px;
 }
 
-.userCard{
+.userCard {
     max-width: 930px;
     margin-left: auto;
     margin-right: auto;
     background-color: white;
 }
 
-.userCard .welcome{
+.userCard .welcome {
     background-color: #d96f6f;
     color: white;
     margin-bottom: 10px;
@@ -103,17 +111,17 @@ a{
     position: relative;
 }
 
-.userCard .picture{
+.userCard .picture {
     float: left;
     margin-right: 60px;
 }
 
-.userCard .text{
+.userCard .text {
     float: left;
     width: 470px;
 }
 
-.userCard .welcome .triangle{
+.userCard .welcome .triangle {
     border: 8px solid transparent;
     width: 0px;
     border-top-width: 0px;
@@ -124,17 +132,17 @@ a{
     top: 100%;
 }
 
-.userCard .pictureAndText{
+.userCard .pictureAndText {
     padding: 50px;
 }
 
-*{
-    margin:0;
+* {
+    margin: 0;
     padding: 0;
 }
 
 
-.text hr{
+.text hr {
     height: 0;
     border: none;
     border-top: 1px solid #dedede;
@@ -142,39 +150,61 @@ a{
 }
 
 
-.userCard dl dt{
+.userCard dl dt {
     float: left;
     font-weight: bold;
-    width:50%;
+    width: 50%;
 }
 
-.userCard dl dd{
+.userCard dl dd {
     float: left;
     color: #9da0a7;
-    width:50%;
+    width: 50%;
 }
- 
-.userCard .media{
+
+.userCard .media {
     background-color: #d96f6f;
     text-align: center;
 }
 
-.userCard .media a{
+.userCard .media a {
     border-radius: 50%;
     display: inline-block;
-    width:40px;
+    width: 40px;
     margin: 0 16px;
     padding: 5px 0;
     line-height: 30px;
 }
 
-.userCard .media a:hover{
+.userCard .media a:hover {
     background: #990a0c;
 }
 
-.media svg{
+.media svg {
     width: 30px;
     height: 30px;
     fill: white;
     vertical-align: top;
+}
+
+body main {
+    margin-top: -300px;
+}
+
+body main .downloadButton{
+    font-size: 14px;
+    line-height: 16px;
+    padding: 16px 55px;
+    border: 1px solid #cbcdcf;
+    background: #efefef;
+    display: inline-block;
+    transition: box-shadow 1s;
+}
+
+body main .downloadButtonWrapper{
+    text-align: center;
+    margin-top: 20px;
+}
+body main .downloadButton:hover{
+    box-shadow: 0px 6px 23px 0px rgba(0,0,0,0.56);
 }
