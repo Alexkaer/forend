@@ -1,0 +1,50 @@
+.con{
+    width: 100%;
+    height: auto;
+    background-color: #F1F1F1;
+}
+
+.icon{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    background-color: aqua;
+    top: 20px;
+    left: 20px;
+}
+
+.title{
+    position: relative;
+    left: 120px;
+    top: -60px;
+    color: red;
+    font-size: 20px;
+    width: 50%;
+    background-color:aqua;
+}
+
+.des{
+    position: relative;
+    left: 120px;
+    top: -20px;
+    color: red;
+    font-size: 14px;
+    width: 50%;
+    background-color: aqua;
+}
+
+.time{
+    position: absolute;
+    right: 20px;
+    top: 30px;
+    color: red;
+    font-size: 20px;
+    background-color: blue;
+
+}
+
+
+/* * {
+    margin: 0;
+    padding: 0;
+} */

@@ -1,0 +1,46 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.tab {
+    background-color: blue;
+    white-space: nowrap;
+    color: white;
+    overflow: scroll;
+}
+
+#button {
+    height: 40px;
+    line-height: 40px;
+    background-color: #0077FF;
+    border-radius: 4px;
+    color: white;
+    margin: 100px auto;
+    width: 200px;
+    text-align: center;
+}
+
+div span {
+    font-size: 20px;
+    color: white;
+    margin-right: 20px;
+    line-height: 40px;
+}
+
+div :first-child {
+    margin-left: 20px;
+}
+
+div :last-child {
+    margin-right: 20px;
+}
+
+#d {
+    color: red;
+}
+

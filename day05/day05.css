@@ -1,0 +1,16 @@
+h1,h2 {
+    text-align: center
+}
+
+hr {
+    height: 1px;
+}
+.name {
+    color: #2a7ae2;
+}
+.code-bg {
+    border-left: 3px solid #2a7ae2;
+    padding: 10px;
+    background: #eef;
+    border-radius: 5px;
+}
