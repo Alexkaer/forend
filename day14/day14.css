@@ -1,0 +1,30 @@
+a {
+    text-decoration: none;
+}
+a:hover {
+    color: red;
+}
+
+.left::before {
+    content: "->";
+    color: red;
+}
+
+.left::after {
+    content: "|";
+    color: blue;
+}
+
+.box {
+    width: 100%;
+    height: 100px;
+    background-color: bisque;
+}
+
+.singal-line {
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}

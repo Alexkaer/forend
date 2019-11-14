@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+p {
+    color: red;
+}
+
+.first {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: line-through;
+    text-align: center;
+}
+
+#second {
+    color: blue;
+}
+
+[left] {
+    color: green;
+}
+
+[left="liquid"] {
+    background-color: red;
+}
+
+[left~="spicy"] {
+    color:brown;
+}
+
+a {
+    color: blue;
+    font-weight: bold;
+}
+
+a :visited {
+    color: yellow;
+}
+
+a:hover,
+a:active,
+a:focus {
+    color: violet;
+    text-decoration: none;
+}
+
+p::first-letter {
+    font-weight: bold;
+
+}
+
+p::first-line {
+    font-size: 3em;
+}
+
+
+[href^=https]::after {
+    content: '⤴';
+  }
