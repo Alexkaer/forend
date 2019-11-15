@@ -1,0 +1,28 @@
+.content {
+    width: 400px;
+    height: 100px;
+    background-color: bisque;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.content div {
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    color: white;
+}
+
+.f1 {
+    background-color: red;
+    align-items: center;
+}
+
+.f2 {
+    background-color: green;
+}
+
+.f3 {
+    background-color:grey;
+}
